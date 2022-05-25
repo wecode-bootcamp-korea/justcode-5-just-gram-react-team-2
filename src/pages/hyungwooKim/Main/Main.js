@@ -30,7 +30,7 @@ function Main() {
                             <a className="triple_dots"><i className="fa-solid fa-ellipsis"></i></a>
                         </div>
                         <div className="feed_image">
-                            <img alt="feed_image" src="images/IMG_5654.JPG"/>
+                            <img alt="feed_image" src="images/hyungwooKim/IMG_5654.JPG"/>
                         </div>                        
                         <div className="feed_contents">
                             <div className="button_group">
