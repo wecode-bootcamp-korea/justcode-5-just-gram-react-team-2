@@ -1,0 +1,38 @@
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+.menu-list li {
+  padding: 10px;
+}
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+.search-item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.mouse-scale:hover {
+  transform: scale(1.2);
+}
+.product-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.select-item {
+  margin-top: 5px;
+  font-weight: bold;
+}

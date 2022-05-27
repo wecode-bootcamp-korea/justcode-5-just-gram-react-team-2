@@ -1,0 +1,64 @@
+{
+  "products":[
+    {
+      "id":1,
+      "img":"https://pbs.twimg.com/profile_images/1374979417915547648/vKspl9Et_400x400.jpg",
+      "name":"reo_maximus",
+      "ripple":"자랑스럽다 지은아 화이팅"         
+    },
+    { 
+      "id":2,
+      "img":"https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_500.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90",
+      "name":"weonmogang",
+      "ripple":"너무나예쁜 지은님"
+    },
+    {
+      "id":3,
+      "img":"https://www.naewoeilbo.com/news/photo/202204/493865_269519_2847.jpg",
+      "name":"raniihtb",
+      "ripple":"너무 아름다워요"
+    },
+    {
+      "id":4,
+      "img":"https://www.theguru.co.kr/data/photos/20210937/art_16316071303022_bf8378.jpg",
+      "name":"seungjune_park",
+      "ripple":"으잌 어디가셔여? 부디 코로나조심 몸조심 하시고 무사히 다녀오시길.... "
+    },
+    {
+      "id":5,
+      "img":"https://img.sbs.co.kr/newsnet/etv/upload/2014/05/16/30000380197_1280.jpg",
+      "name":"keab_korea",
+      "ripple":"응원합니다~~화이팅!!!!"
+    },
+    {
+      "id":6,
+      "img":"https://cdn.kado.net/news/photo/202203/1115980_541644_5132.jpg",
+      "name":"seunghean819",
+      "ripple":"이지은. 파이팅!!!"
+    },
+    {
+      "id":7,
+      "img":"http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_1588900211036_19_600x600.JPG",
+      "name":"higeru.makita",
+      "ripple":"매우 아름답다. 좋은. 미백. 아름답고 아름답습니다. 의상도 멋지다. 잘 어울려."
+    },
+    {
+      "id":8,      "img":"https://image.xportsnews.com/contents/images/upload/article/2021/0724/mb_1627107334849217.jpg",
+      "name":"namjoonskidbearer",
+      "ripple":"Goddess"
+    },
+    {
+      "id":9,
+      "img":"http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_17_600x600.JPG",
+      "name":"mcbjhome",
+      "ripple":"쾌속질주 아이유!!! ㅋ"
+    },
+    {
+      "id":10,
+      "img":"https://t1.daumcdn.net/cfile/tistory/99BCFB485EDEDBAF25",
+      "name":"dlwlrma_update",
+      "ripple":"~~ 드레스도 잘 어울리는 아이유~"
+    }
+  ]
+  
+}
