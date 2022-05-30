@@ -19,7 +19,7 @@ function CommentList() {
   return (
     <div className="commentList">
       <h1>Main Page</h1>
-      <ul>
+      {/* <ul>
         {commentList.map((comment) => {
           return (
             <Comment
@@ -30,7 +30,7 @@ function CommentList() {
             />
           );
         })}
-      </ul>
+      </ul> */}
     </div>
   );
 }
