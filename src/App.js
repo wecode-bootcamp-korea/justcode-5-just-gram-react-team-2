@@ -15,9 +15,9 @@ function App() {
   return (
     <div>
       <Routes>
-        {/* <Route path="/" element={<Login setauthenticate={setauthenticate} />} />
-        <Route path="/main" element={<Main />} /> */}
-        <Route path="/" element={<ProductAll />} />
+        <Route path="/" element={<Login setauthenticate={setauthenticate} />} />
+        <Route path="/main" element={<Main />} />
+        {/* <Route path="/" element={<ProductAll />} /> */}
         {/* <Route path="/" element={<Cmment />} /> */}
       </Routes>
     </div>

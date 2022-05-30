@@ -1,16 +1,57 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import "./Main.scss";
+import Students from "./Students";
 import { link } from "react-router-dom";
 import TodoBoard from "./TodoBoard";
 import "bootstrap/dist/css/bootstrap.min.css";
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "add-student":
+      const name = action.payload.name;
+      const newStudent = {
+        id: Date.now(),
+        name,
+        isHere: false,
+      };
+      return {
+        count: state.count + 1,
+        students: [...state.students, newStudent],
+      };
+    case "delete-student":
+      return {
+        count: state.count - 1,
+        students: state.students.filter(
+          (student) => student.id !== action.payload.id
+        ),
+      };
+    case "mark-student":
+      return {
+        count: state.count,
+        students: state.students.map((student) => {
+          if (student.id === action.payload.id) {
+            return { ...student, isHere: !student.isHere };
+          }
+          return student;
+        }),
+      };
+    default:
+      return state;
+  }
+};
 
+const initialState = {
+  count: 0,
+  students: [],
+};
 const index = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [todoList, setTodoList] = useState([]);
-  const addItem = () => {
-    console.log("im hererer!", inputValue);
-    setTodoList([...todoList, inputValue]);
-  };
+  // const [inputValue, setInputValue] = useState("");
+  // const [todoList, setTodoList] = useState([]);
+  const [name, setName] = useState("");
+  const [studentsInfo, dispatch] = useReducer(reducer, initialState);
+  // const addItem = () => {
+  //   console.log("im hererer!", inputValue);
+  //   setTodoList([...todoList, inputValue]);
+  // };
 
   return (
     <>
@@ -108,7 +149,18 @@ const index = () => {
             </ul>
             <div className="time-log">
               <span>32분 전</span>
-              <TodoBoard todoList={todoList} />
+              {studentsInfo.students.map((student) => {
+                return (
+                  <Students
+                    key={student.id}
+                    name={student.name}
+                    dispatch={dispatch}
+                    id={student.id}
+                    isHere={student.isHere}
+                  />
+                );
+              })}
+              {/* <TodoBoard todoList={todoList} /> */}
             </div>
             <p id="result"></p>
           </div>
@@ -119,12 +171,31 @@ const index = () => {
               id="comment"
               className="input-comment"
               type="text"
+              value={name}
               placeholder="댓글 달기..."
-              onChange={(event) => setInputValue(event.target.value)}
+              // onChange={(event) => setInputValue(event.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
-            <button id="bt" className="submit-comment" onClick={addItem}>
+            <button
+              id="bt"
+              className="submit-comment"
+              onClick={() => {
+                dispatch({ type: "add-student", payload: { name } });
+              }}
+            >
               게시
             </button>
+            {/* {studentsInfo.students.map((student) => {
+              return (
+                <Students
+                  key={student.id}
+                  name={student.name}
+                  dispatch={dispatch}
+                  id={student.id}
+                  isHere={student.isHere}
+                />
+              );
+            })} */}
           </div>
         </article>
       </div>
