@@ -65,10 +65,17 @@ body {
     width: 400px;
     height: 40px;
     color: #ffffff;
-    background-color: #c0dffd;
     border: none;
     border-radius: 3px;
     font-size: 20px;
+}
+
+.activate {
+    background-color: #0097f6;
+}
+
+.deactivate {
+    background-color: #c0dffd;
 }
 
 .extra-box {

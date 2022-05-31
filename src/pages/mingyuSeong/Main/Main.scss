@@ -7,8 +7,8 @@ input:focus {
 }
 
 #feed-img {
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }
 
 #profile-img{
@@ -18,8 +18,9 @@ input:focus {
     border-radius: 30px;
 }
 
-.container {
-
+.mainjs-container {
+    background-color: #fafafa;   
+    
 }
 
 .nav-container {
@@ -32,8 +33,8 @@ input:focus {
     justify-content: space-around;
     width: 100%;
     height: 8vh;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .nav-icon-text {
@@ -43,7 +44,10 @@ input:focus {
     width: 120px;
 }
 
-.icon-insta {
+.icon-logo {
+    width: 40px;
+    height: 24px;
+    margin-top : 10px;
     padding-right: 16px;
     border-right: 2px solid black;
 }
@@ -107,11 +111,15 @@ input:focus {
 .main-container {
     display: flex;
     justify-content: center;
-    padding-top: 8vh;
+    padding-top: 30vh;
 }
 
 .feeds {
-    border: 1px solid black;
+    width: 470px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-right: 32px;
+    background-color: #ffffff;
 }
 
 .feed {
@@ -128,6 +136,7 @@ input:focus {
     display: flex;
     align-items: center;
     height: 40px;
+    margin: 8px;
 }
 
 .profile-img {
@@ -140,15 +149,26 @@ input:focus {
 }
 
 .profile-name {
+    font-weight: bold;
     margin: 2px;
 }
 
 .profile-location {
+    color: #a3a3a3;
     margin: 2px;
 }
 
+.moreinfo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 56px;
+}
+
 .profile-moreinfo {
-    
+    width: 16px;
+    height: 16px;
 }
 
 .profile-nickname {
@@ -157,14 +177,18 @@ input:focus {
 
 .upload-time {
     margin: 2px;
+    color: #a3a3a3;
 }
 
 .common-follow {
     margin: 2px;
+    color: #a3a3a3;
 }
 
 .feed-img {
     display: flex;
+    width: 468px;
+    height: 600px;
 }
 
 .feed-buttons {
@@ -173,42 +197,71 @@ input:focus {
 }
 
 .button-left {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    width: 100px;
 }
 
 .button-heart {
+    width: 24px;
+    height: 24px;
+}
 
+.button-heart-img {
+    width: 100%;
+    height: 100%;
 }
 
 .button-comment {
+    width: 24px;
+    height: 24px;
+}
 
+.button-comment-img {
+    width: 100%;
+    height: 100%;
 }
 
 .button-dm {
+    width: 24px;
+    height: 24px;
+}
 
+.button-dm-img {
+    width: 100%;
+    height: 100%;
 }
 
 .button-right {
-
+    margin: 8px;
 }
 
 .button-bookmark {
+    width: 24px;
+    height: 24px;
+}
 
+.button-bookmark-img {
+    width: 100%;
+    height: 100%;
 }
 
 .feed-heart {
     font-size: 12px;
-    margin: 8px;
+    margin-left: 10px;
 }
 
 .feed-text {
     font-size: 12px;
-    margin: 8px;
+    margin-left: 10px;
 }
 
 .feed-uploaded {
     font-size: 12px;
-    margin: 8px;
+    margin-left: 12px;
+    color: #a3a3a3;
 }
 
 .feed-comment-box {
@@ -216,17 +269,26 @@ input:focus {
 }
 
 .feed-comment-input {
+    border-top: 1px solid #dbdbdb;
+    padding: 10px;
+}
 
+.comment-input {
+    width: 90%;
+    border: none;
 }
 
 .comment-button {
-
+    width: 10%;
+    color: #50a2f1;
+    border: none;
+    background-color: white;
 }
 
 .main-right {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    width: 320px;
 }
 
 .main-right-profile {
@@ -237,14 +299,18 @@ input:focus {
 }
 
 .main-right-story {
-
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #ffffff;
 }
 
 .story-header {
     display: flex;
     justify-content: space-between;
+    color: #a6a6a6;
     font-size: 12px;
-    margin: 8px;
+    font-weight: bold;
+    margin: 12px 12px 8px 12px;
 }
 
 .story-contents {
@@ -259,14 +325,19 @@ input:focus {
 }
 
 .main-right-recommend {
-    
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #ffffff;
 }
 
 .recommend-header {
     display: flex;
     justify-content: space-between;
+    color: #a6a6a6;
     font-size: 12px;
-    margin: 8px;
+    font-weight: bold;
+    margin: 12px 12px 8px 12px;
 }
 
 .recommend-contents {
@@ -285,10 +356,22 @@ input:focus {
     display: flex;
 }
 
+.follow-button {
+    color: #50a2f1;
+    border: none;
+    background-color: white;
+}
+
 .main-right-info {
 
 }
 
 .information {
+    font-size: 12px;
+    color: #d8d8d8;
+}
 
+.footer-text {
+    font-size: 12px;
+    margin: 10px 0;
 }

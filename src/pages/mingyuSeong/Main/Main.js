@@ -3,11 +3,11 @@ import "./Main.scss"
 
 function Main() {
     return(
-    <div className="container">
+    <div className="mainjs-container">
         <nav className="nav-container">
           <div className="nav-icon-text">
             <div className="icon-insta">
-              <i className="fa-brands fa-instagram fa-xl icon-logo" />
+              <img className="icon-logo" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" />
             </div>
             <div className="text-insta">
               <span>Justgram</span>
@@ -55,36 +55,41 @@ function Main() {
                     </div>
                   </div>
                 </header>
-                <button className="profile-moreinfo">
-                </button>
+                <div className="moreinfo-box">
+                  <img className="profile-moreinfo" src="https://cdn-icons-png.flaticon.com/512/17/17764.png?w=1060&t=st=1653564568~exp=1653565168~hmac=627231a76390dd0b0c2252a16c7c17803a7e3dbea86137fefa8bc634f984cac1" />
+                </div>
               </div>
               <div className="feed-img">
                 <img id="feed-img" src="images/mingyuSeong/justgram-feed.jpg" alt="feed-image" />
               </div>
               <section className="feed-buttons">
-                <div className="buttom-left">
-                  <button className="button-heart">
-                  </button>
-                  <button className="button-comment">
-                  </button>
-                  <button className="button-dm">
-                  </button>
+                <div className="button-left">
+                  <div className="button-heart">
+                    <img className="button-heart-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                  </div>
+                  <div className="button-comment">
+                    <img className="button-comment-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                  </div>
+                  <div className="button-dm">
+                    <img className="button-dm-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                  </div>
                 </div>
                 <div className="button-right">
-                  <button className="button-bookmark">
-                  </button>
+                  <div className="button-bookmark">
+                    <img className="button-bookmark-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                  </div>
                 </div>
               </section>
               <section className="feed-heart">
-                <span>star._.meanstar</span>"님 "
-                <span>여러명</span>"이 좋아합니다"
+                <span className="profile-name">star._.meanstar</span>님&nbsp;
+                <span>외 여러명</span>이 좋아합니다
               </section>
               <div className="feed-text">
-                <span>
+                <span className="profile-name">
                   star._.meanstar
                 </span>
                 <span>
-                  안녕하세요. 첫 피드입니다.
+                  &nbsp;안녕하세요. 첫 피드입니다.
                 </span>
                 <span>
                   ... 더보기
@@ -100,7 +105,7 @@ function Main() {
                 </div>
               </div>
               <section className="feed-comment-input">
-                <textarea placeholder="댓글 달기..." defaultValue={"\n                    "} />
+                <input className="comment-input" placeholder="댓글 달기..."></input>
                 <button className="comment-button">
                   게시
                 </button>
@@ -114,7 +119,7 @@ function Main() {
               </div>
               <div className="profile-text">
                 <div className="profile-name">
-                  <span>
+                  <span className="profile-name">
                     star._.meanstar
                   </span>
                 </div>
@@ -141,7 +146,7 @@ function Main() {
                   </div>
                   <div className="profile-text">
                     <div className="profile-name">
-                      <span>
+                      <span className="profile-name">
                         star._.meanstar
                       </span>
                     </div>
@@ -158,7 +163,7 @@ function Main() {
                   </div>
                   <div className="profile-text">
                     <div className="profile-name">
-                      <span>
+                      <span className="profile-name">
                         star._.meanstar
                       </span>
                     </div>
@@ -190,7 +195,7 @@ function Main() {
                     </div>
                     <div className="profile-text">
                       <div className="profile-name">
-                        <span>
+                        <span className="profile-name">
                           star._.meanstar
                         </span>
                       </div>
@@ -201,7 +206,7 @@ function Main() {
                       </div>
                     </div>
                   </div>
-                  <button>
+                  <button className="follow-button">
                     팔로우
                   </button>
                 </div>
@@ -212,7 +217,7 @@ function Main() {
                     </div>
                     <div className="profile-text">
                       <div className="profile-name">
-                        <span>
+                        <span className="profile-name">
                           star._.meanstar
                         </span>
                       </div>
@@ -223,7 +228,7 @@ function Main() {
                       </div>
                     </div>
                   </div>
-                  <button>
+                  <button className="follow-button">
                     팔로우
                   </button>
                 </div>
@@ -266,7 +271,7 @@ function Main() {
                     언어
                   </span>
                 </div>
-                <div>
+                <div className="footer-text">
                   © 2022 JUSTGRAM FROM JUSTCODE
                 </div>
               </div>
