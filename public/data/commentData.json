@@ -1,0 +1,52 @@
+[
+  {
+      "id" : 1,
+      "userName": "wecode",
+      "text": "밤이 빨리 왔으면 좋겠어요."
+  },
+  {
+      "id": 2,
+      "userName": "codekim",
+      "text": "햇빛이 참 좋네요."
+  },
+  {
+      "id": 3,
+      "userName": "codepark",
+      "text": "하늘이 파랗다."
+  },
+  {
+      "id": 4,
+      "userName": "interesting",
+      "text": "거기 딱 있어라."
+  },
+  {
+      "id": 5,
+      "userName": "codesohard",
+      "text": "이런 날씨엔 코딩이지."
+  },
+  {
+      "id": 6,
+      "userName": "slowly",
+      "text": "이런 날엔 천천히 코드 짜보는 것도 괜찮아."
+  },
+  {
+      "id": 7,
+      "userName": "glassdoor",
+      "text": "저 창문을 열고 나가고 싶다."
+  },
+  {
+      "id": 8,
+      "userName": "aprilinseoul",
+      "text": "코딩 하다 보니깐 5월이 됐네."
+  },
+  {
+      "id": 9,
+      "userName": "sunnyday",
+      "text": "해가 쨍쨍한 날이다."
+  },
+  {
+      "id": 10,
+      "userName": "codelee",
+      "text": "금요일인게 너무 좋다."
+  }
+]

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Router from './components/Router';
+import Router from './pages/hyungwooKim/components/Router';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

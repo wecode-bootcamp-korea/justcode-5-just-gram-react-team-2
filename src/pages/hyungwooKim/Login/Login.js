@@ -5,33 +5,48 @@ import { useNavigate } from "react-router-dom";
 
 
 function Login() {
-  const navigate = useNavigate ();
-  const goToMain = () => {
-    navigate("/main");
-  };
-
   const [id, setId] = useState ('');
   const handleIdInput = (e) => { 
     setId(e.target.value);
-    console.log('id는',id) 
   };
-
+  
   const [pw, setPw] = useState ('');
   const handlePwInput = (e) => {
     setPw(e.target.value);
-    console.log('pw는', pw)
-  }
-
+  };
+  
   const validation = (id, pw) => {
     if (!id.includes('@')||pw.length < 8) {
       return false;
     } 
-      return true ;
-  }
-
+    return true ;
+  };
+  
   const valid = validation(id, pw);
-
-  console.log(valid)
+  
+  const navigate = useNavigate ();
+  const goToMain = () => {
+    fetch("http://52.79.143.176:8000/users/login", {
+      method: "POST",
+			headers: {
+			'Content-Type': "application/json",
+			},
+      body: JSON.stringify({
+        email: id,
+        password: pw,
+      }),
+    })
+      .then((response) => response.json())
+      .then((result) => { console.log(result)
+        if(result.message==="client input invalid") {
+         alert("로그인에 실패했습니다. ")
+        } else{
+          navigate('/main');
+        }
+        localStorage.setItem('token', result.token)
+      }
+      );
+    }
 
     return (
       <div>

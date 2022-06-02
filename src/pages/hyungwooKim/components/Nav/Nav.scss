@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.Nav {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 0 200px 0 200px;
+
+    .logo_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+
+
+        .justgramLogo {
+            font-size: 30px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: inline-block;
+        }
+        
+        .justgram{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            position: inline-block;
+        }
+    }
+
+    .search {
+        width: 200px;
+        height: 23px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #FAFAFA;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        font-family: "Noto Sans KR", sans-serif;
+        color:rgb(177, 177, 177);
+    }
+    
+    .menu_box { 
+        img {
+        width: 25px;
+        align-items: center;
+        padding-left: 20px;
+        }
+    }
+}
