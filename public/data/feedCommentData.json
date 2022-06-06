@@ -1,0 +1,104 @@
+[
+    {
+        "feedId": 1,
+        "author": {
+            "nickname": "wecode",
+            "imageUrl":
+            "https://images.unsplash.com/photo-1474978528675-4a50a4508dc3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370"
+        },
+        "content": "Hello!! It's my first Feed!",
+        "imageUrl":
+            "https://images.unsplash.com/photo-1589779137147-3d388746b765?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987",
+        "isLiked": true,
+        "likePeople": {
+            "nickname": "sunnyside",
+            "imageUrl":
+            "https://images.unsplash.com/photo-1653589954166-afa8985cc65c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3432&q=80",
+            "count": 20
+        },
+        "date": "3시간전",
+        "comments": [
+            {
+            "id": 1,
+            "author": "wecode",
+            "content": "밤이 빨리 왔으면 좋겠어요.",
+            "isLiked": false
+            },
+            {
+            "id": 2,
+            "author": "codekim",
+            "content": "햇빛이 참 좋네요.",
+            "isLiked": true
+            },
+            {
+            "id": 3,
+            "author": "codepark",
+            "content": "하늘이 파랗다.",
+            "isLiked": true
+            },
+            {
+            "id": 4,
+            "author": "interesting",
+            "content": "거기 딱 있어라.",
+            "isLiked": false
+            },
+            {
+            "id": 5,
+            "author": "codesohard",
+            "content": "이런 날씨엔 코딩이지.",
+            "isLiked": false
+            }
+        ]
+    },
+    {
+        "feedId": 2,
+        "author": {
+            "nickname": "slowly",
+            "imageUrl":
+            "https://images.unsplash.com/photo-1648737966900-730a5b2d673e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80"
+        },
+        "content": "Today, my log",
+        "imageUrl":
+            "https://images.unsplash.com/photo-1653594459884-4025f75c46ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+        "isLiked": true,
+        "likePeople": {
+            "nickname": "sunnyup",
+            "imageUrl":
+            "https://images.unsplash.com/photo-1653507277153-fd2b501cc0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
+            "count": 12
+        },
+        "date": "1일전",
+        "comments": [
+            {
+            "id": 1,
+            "author": "slowly",
+            "content": "이런 날엔 천천히 코드 짜보는 것도 괜찮아.",
+            "isLiked": false
+            },
+            {
+            "id": 2,
+            "author": "glassdoor",
+            "content": "저 창문을 열고 나가고 싶다.",
+            "isLiked": true
+            },
+            {
+            "id": 3,
+            "author": "aprilinseoul",
+            "content": "저 창문을 열고 나가고 싶다.",
+            "isLiked": true
+            },
+            {
+            "id": 4,
+            "author": "sunnyday",
+            "content": "해가 쨍쨍한 날이다.",
+            "isLiked": false
+            },
+            {
+            "id": 5,
+            "author": "codelee",
+            "content": "금요일인게 너무 좋다.",
+            "isLiked": true
+            }
+        ]
+    }
+]

@@ -14,6 +14,10 @@
             border: none;
             width: 50px;
         }
+
+        @mixin commentFont {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
      
         width: 100vw;
         height: 100vh;
@@ -22,6 +26,7 @@
         width: 600px;
         margin-right: 35px;
         height: fit-content;
+        margin-bottom: 25px;
 
         span {
             font-family: "Noto Sans KR", sans-serif;
@@ -130,7 +135,82 @@
         
         }
         
+    
+        .new_comment {
+            @include commentFont;
+            font-size: 13px;
+            font-weight: 400;
+            margin-left: 15px;
+            margin-top: 4px;
+        }
         
+        .new_comment_text {
+            display: inline-block;
+            @include commentFont;
+            font-size: 13px;
+            font-weight: 800;
+        }
+        
+        .timing {
+            margin-left: 15px;
+            display: inline-block;
+            @include commentFont;
+            font-size: 13px;
+            font-weight: 400;
+            color: grey;
+            margin-bottom: 10px;
+        }
+        
+        .writeNewComment {
+            @mixin button_style_basic {
+                margin: 0;
+                padding: 0;
+                color: #56A5F2;
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-align: right;
+                text-decoration: none;
+                display: inline-block;
+                width: auto;
+                background: none;
+                border: none;
+                width: 50px;
+            }
+    
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            border-top: 1px solid #E4E4E4;
+            padding-right: 15px;
+            @include commentFont;
+            
+            .commentInput {
+                margin-left: 15px;
+                border: none;
+            }
+    
+            .buttonEnabled {
+                @include button_style_basic;
+            }
+    
+            .buttonDisabled {
+                margin: 0;
+                padding: 0;
+                color: grey;
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-align: right;
+                text-decoration: none;
+                display: inline-block;
+                width: auto;
+                background: none;
+                border: none;
+                width: 50px;
+            }
+    
+        }    
         
     }
 
