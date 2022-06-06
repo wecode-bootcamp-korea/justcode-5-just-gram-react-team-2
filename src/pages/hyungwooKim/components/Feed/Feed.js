@@ -85,6 +85,7 @@ function Feed(props) {
                         key={commentEach.id}
                         author={commentEach.author}
                         comment={commentEach.content}
+                        isLiked={commentEach.isLiked}
                     />
                     );
                 })}

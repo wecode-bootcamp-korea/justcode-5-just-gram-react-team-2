@@ -1,13 +1,20 @@
 import "./Comment.scss";
 import React, { useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-library.add(faHeart);
+import { faHeart, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faHeart, faTrashCan);
 
 function Comment(props) {
-
+    const likeStatus = props.isLiked;
+    const [isLiked, setIsLiked] = useState(likeStatus);
+    const likedBtn = () => {
+        setIsLiked(!isLiked)
+    }
+    
     return (
     <div className="comment_group">
         <div className="commentEach">
@@ -15,12 +22,15 @@ function Comment(props) {
             <span className="userComment">{props.comment}</span>
         </div>
         <div className="commentBtnGroup">
+
             <FontAwesomeIcon
-              icon="fa-regular fa-heart"
+              icon="fa-solid fa-heart"
+              className={isLiked ? "redHeart" : "grayHeart"}
+              onClick={likedBtn}
             />
-            <FontAwesomeIcon
-              icon="fa-regular fa-trash-can"
-            />
+            <FontAwesomeIcon 
+              icon="fa-solid fa-trash-can" 
+              />
         </div>
     </div>
   );
