@@ -16,6 +16,7 @@ import {
   } from '@fortawesome/free-solid-svg-icons';
   import { library } from '@fortawesome/fontawesome-svg-core';
   import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
   
   library.add(
     faHeart,
@@ -37,6 +38,7 @@ function Feed(props) {
     const commentInput = event => setComment(event.target.value);
 
     const [commentArray, setCommentArray] = useState([]);
+    
     const registComment = event => { 
         event.preventDefault();
         if (comment === ''){
@@ -65,11 +67,11 @@ function Feed(props) {
                     <div className="button_group">
                         <div>
                             <FontAwesomeIcon icon="fa-solid fa-heart"/>
-                            <FontAwesomeIcon icon="fa-regular fa-comment"/>
+                            <FontAwesomeIcon icon="fa-solid fa-comment" />
                             <FontAwesomeIcon icon="fa-solid fa-share-from-square"/>
                         </div>
                         <div>
-                            <FontAwesomeIcon icon="fa-regular fa-bookmark" color="gray" />
+                            <FontAwesomeIcon icon="fa-solid fa-bookmark" color="gray" />
                         </div>
                     </div>
                     <div className="like_sentence">
