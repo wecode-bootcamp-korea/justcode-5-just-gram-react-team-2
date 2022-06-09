@@ -1,0 +1,55 @@
+.comment_group {
+    @mixin commentFont {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    display: flex;
+    justify-content: space-between;
+    .commentEach {
+        margin-left: 15px;
+
+        .userName{
+            display: inline-block;
+            @include commentFont;
+            font-weight: 800;
+            font-size: 13px;
+            color: black;
+            margin-right: 5px;
+        }
+
+        .userComment{
+            display: inline-block;
+            @include commentFont;
+            font-weight: 400;
+            font-size: 13px;
+            color: black;
+            margin-right: 5px;
+        }
+
+        .more{
+            display: inline-block;
+            @include commentFont;
+            font-weight: 400;
+            font-size: 13px;
+            color: grey;
+        }    
+    }
+    
+    .commentBtnGroup {
+        margin-right: 15px;
+
+        .redHeart{
+            font-weight: 400;
+            font-size: 13px;
+            color: red;
+            margin-right: 10px;
+        }
+
+        .grayHeart{
+            font-weight: 400;
+            font-size: 13px;
+            color: grey;
+            margin-right: 10px;
+        }
+    }
+    
+}

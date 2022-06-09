@@ -1,0 +1,223 @@
+
+
+.floating_section {
+            width: 270px;
+            height: fit-content;
+
+            @mixin button_style_basic {
+                margin: 0;
+                padding: 0;
+                color: #56A5F2;
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-align: right;
+                text-decoration: none;
+                display: inline-block;
+                width: auto;
+                background: none;
+                border: none;
+                width: 50px;
+            }
+
+            @mixin font {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            @mixin fontGrey {
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 400;
+                color: grey;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+
+            
+        .myProfileBox {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 10px;
+        
+            img {
+                height: 45px;
+                width: 45px;
+                border-radius: 70px;
+                overflow: hidden; 
+                object-fit: cover;
+                margin: 0px 15px 0px 0px;
+            }
+
+            .profileId{
+                @include font;
+                color: black;
+                font-weight: 800;
+                font-size: 14px;
+                margin-bottom: 2px;
+            }
+
+            .profileDetails{
+                @include fontGrey;
+            }
+        }
+        
+        
+        .story_box {
+            white-space: pre-wrap;
+            background-color: white;
+            border: 1px solid #E4E4E4;
+            padding: 15px 15px 5px 15px;
+            margin-bottom: 15px;
+            
+            .Box_header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+            
+                .fontGrey {
+                    @include fontGrey;
+                }
+            
+                .buttonStyle {
+                    @include font;
+                    font-weight: 600;
+                }
+            }
+
+            .storyVisiters {
+                margin-top: 10px;
+            
+                .storyProfile {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    margin-bottom: 8px;
+    
+                    .storyUserImg {
+                        display: inline-block;
+    
+                        .userImg {
+                            border: 0.5px solid gainsboro;
+                            height: 34px;
+                            width: 34px;
+                            border-radius: 70px;
+                            overflow: hidden; 
+                            object-fit: cover;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 10px;
+                        }
+                    }
+                    .storyUsers {
+                        display: inline-block;
+    
+                        .userName {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 800;
+                            color: black;
+                            @include font;
+                        }
+                        
+                        .timings {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: grey;
+                            @include font;
+                        }
+                    }
+                }
+            }
+            }
+
+        .recommend_box {
+            white-space: pre-wrap;
+            background-color: white;
+            border: 1px solid #E4E4E4;
+            padding: 15px 15px 5px 15px;
+            margin-bottom: 15px;
+
+            .Box_header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+            
+                .fontGrey {
+                    @include fontGrey;
+                }
+            
+                .buttonStyle {
+                    @include font;
+                    font-weight: 600;
+                }
+            }
+
+            .recommendGroup {
+                margin-top: 10px;
+            
+                .recommendProfile {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    
+                    .recommendUserImg {
+                        display: inline-block;
+    
+                        .recommendImg {
+                            border: 0.5px solid gainsboro;
+                            height: 34px;
+                            width: 34px;
+                            border-radius: 70px;
+                            overflow: hidden; 
+                            object-fit: cover;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 10px;
+                        }
+                    }
+                    .recommendUsers {
+                        display: inline-block;
+    
+                        .userName {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 800;
+                            color: black;
+                            @include font;
+                        }
+                        
+                        .followers {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: grey;
+                            @include font;
+                        }
+                    }
+
+                    .followButton {
+                            @include button_style_basic;
+                    }
+                }
+            }
+        }
+
+        
+
+        .company_info_box a, .company_info_box span{
+            white-space: pre-wrap;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(177, 177, 177);
+            @include font;
+        
+        }
+        
+
+    }
